@@ -18,17 +18,14 @@ public class InWithInteger {
     }
     private void toMul(int num){
         num *= 42;
-        System.out.println(num);
     }
 
     private void toInt(Integer integerNum){
         integerNum = 42;
-        System.out.println(integerNum);
     }
 
     private void toDivide(MyInteger myIntNum){
         myIntNum.myInt /= 42;
-        System.out.println(myIntNum.myInt);
     }
 
     public static void main(String[] args) {
@@ -38,7 +35,12 @@ public class InWithInteger {
 
         InWithInteger pointer = new InWithInteger(1);
         pointer.toMul(num); // 1 * 42 = 42
+        System.out.println(num);
+
         pointer.toInt(integerNum); // 10 -> 42
+        System.out.println(integerNum);
+
         pointer.toDivide(myIntNum); // 42 / 42 = 1
+        System.out.println(myIntNum.myInt);
     }
 }
