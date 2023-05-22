@@ -21,17 +21,14 @@ public class IntWithInteger {
 
     public static void multiplyInt(int num){
         num*=42;
-        System.out.println(num);
     }
 
     public static void multiplyInteger(Integer num){
         num = 42;
-        System.out.println(num);
     }
 
     public static void divideInteger(MyInteger num){
         num.setValue(num.getValue()/42);
-        System.out.println(num.getValue());
     }
 
     public static void main(String[] args) {
@@ -45,7 +42,7 @@ public class IntWithInteger {
 
         MyInteger myInteger = new MyInteger(2);
         divideInteger(myInteger);
-        System.out.println(myInteger);
+        System.out.println(myInteger.getValue());
 
     }
 
