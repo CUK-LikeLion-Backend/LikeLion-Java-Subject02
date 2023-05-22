@@ -87,5 +87,9 @@ public static int indexOf(Object[] array, Object element) {
     return -1;
 }
 //size()
+    public int size(){
+        System.out.println(arr1.length);
+        return arr1.length;
+    }
 
 }
