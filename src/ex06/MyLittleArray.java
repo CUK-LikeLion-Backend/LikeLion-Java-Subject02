@@ -61,6 +61,8 @@ public class MyLittleArray {
             newArray[i] = array[i];
         }
 
+
+
 // 삭제할 인덱스 이후부터의 요소 복사
         for (int i = index + 1; i < array.length; i++) {
             newArray[i - 1] = array[i];
