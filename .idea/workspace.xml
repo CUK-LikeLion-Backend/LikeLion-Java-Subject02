@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c764c20c-c5f4-434c-84e6-fb723e35dde0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ex00/MyLittleHotel" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java02/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java02/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java02/src/ex00/MyLittleHotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/java02/src/ex00/MyLittleHotel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,13 +21,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/Users/kim-yejin/LikeLion-Java-Subject02"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/kim-yejin/LikeLion-Java-Subject02&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

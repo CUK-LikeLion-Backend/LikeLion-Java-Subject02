@@ -5,8 +5,15 @@ import java.util.Scanner;
 class HotelRoom{
 }
 public class MyLittleHotel {
-
     private static int size = 0;
+    public static int getSize() {
+        return size;
+    }
+
+    public static void setSize(int size) {
+        MyLittleHotel.size = size;
+    }
+
     public static void checkIn(HotelRoom[] room){
         if(size>=8) {
             System.out.println("비어 있는 방이 없습니다.");
