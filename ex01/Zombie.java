@@ -1,6 +1,13 @@
 package ex01;
+class Human {
 
-public class Zombie {
+}
+
+public class Zombie extends Human {
+    public void setInfected(boolean infected) {
+        isInfected = infected;
+    }
+
     private boolean isInfected;
     private static String sound = "Grraaaaaa…";
 
@@ -8,13 +15,11 @@ public class Zombie {
         System.out.println(sound);
     }
 
-    public class Human {
 
-    }
-
-    public Human bite() {
-        isInfected = true;
-        return new Human();
+    public Zombie bite() {
+        Zombie h = new Zombie();
+        h.setInfected(true);
+        return h;
     }
 
     public boolean isInfected() {

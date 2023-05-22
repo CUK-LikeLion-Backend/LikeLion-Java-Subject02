@@ -14,8 +14,13 @@ public class ZombieHorde {
     }
     // 좀비가 사람을 물게 함
     public void attack() {
+        List<Zombie> tmp = new ArrayList<>();
         for (Zombie zombie : horde) {
-            zombie.bite();
+            tmp.add(zombie.bite());
+        }
+
+        for (Zombie z : tmp) {
+            horde.add(z);
         }
     }
 
@@ -34,7 +39,6 @@ public class ZombieHorde {
         System.out.println("초기 군단의 크기: " + z.getSize());
 
         Zombie zombie = new Zombie();
-        zombie.bite();
         z.addZombie(zombie);
 
         System.out.println("감염 후 군단의 크기: " + z.getSize());
