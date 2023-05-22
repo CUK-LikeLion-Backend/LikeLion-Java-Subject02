@@ -4,31 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b6c5f2a-88bd-47d0-9a32-841113d07614" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java02.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ex00/MyLittleHotel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ex01/Zombie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ex01/ZombieHorde.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ex02/IntWithInteger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ex03/ChatGPT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ex03/CodingGPT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ex03/GPT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ex03/GameGPT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ex04/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ex04/Brain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ex04/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ex04/Dog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ex05/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ex05/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ex05/output.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ex06/MyLittleArray.java" afterDir="false" />
-    </list>
+    <list default="true" id="8b6c5f2a-88bd-47d0-9a32-841113d07614" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +19,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -62,7 +38,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.IntWithInteger">
+  <component name="RunManager" selected="Application.ChatGPT">
     <configuration name="Animal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ex04.Animal" />
       <module name="java02" />
@@ -130,11 +106,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.IntWithInteger" />
-        <item itemvalue="Application.MyLittleArray" />
-        <item itemvalue="Application.Student" />
-        <item itemvalue="Application.Animal" />
         <item itemvalue="Application.ChatGPT" />
+        <item itemvalue="Application.Student" />
+        <item itemvalue="Application.MyLittleArray" />
+        <item itemvalue="Application.IntWithInteger" />
+        <item itemvalue="Application.Animal" />
       </list>
     </recent_temporary>
   </component>
