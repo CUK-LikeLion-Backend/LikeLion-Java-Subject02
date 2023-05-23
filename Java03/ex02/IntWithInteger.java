@@ -1,66 +1,74 @@
 package ex02;
 
+class MyInteger {
+    private int valueMyInteger;
+
+    public MyInteger(int valueMyInteger) {
+        this.valueMyInteger = valueMyInteger;
+    }
+
+    public int getValueMyInteger() {
+        return valueMyInteger;
+    }
+
+    public void setValueMyInteger(int valueMyInteger) {
+        this.valueMyInteger = valueMyInteger;
+    }
+}
 public class IntWithInteger {
-    private int myInt;
-    private Integer myInteger;
+    private int valueMyInteger;
+    private int valueInt;
+    private Integer valueInteger;
 
-    public IntWithInteger(int myInt, Integer myInteger) {
-        this.myInt = myInt;
-        this.myInteger = myInteger;
+    public IntWithInteger(int valueInt, Integer valueInteger, int valueMyInteger) {
+        this.valueInt = valueInt;
+        this.valueInteger = valueInteger;
+        this.valueMyInteger = valueMyInteger;
     }
 
-    public void multiply42(int x) {
-        myInt *= 42;
+    public int multiply42(int valueInt) {
+        return valueInt * 42;
     }
 
-    public void replaceInt(Integer x) {
-        myInteger = 42;
+    public Integer replace42(Integer valueInteger) {
+        return 42;
     }
 
-    public void divide42(MyInteger x) {
-        myInteger /= 42;
+    public int divide42(int valueMyInteger) {
+        return valueMyInteger / 42;
     }
 
-    public int getMyInt() {
-        return myInt;
+    public int getValueInt() {
+        return valueInt;
     }
 
-    public void setMyInt(int myInt) {
-        this.myInt = myInt;
+    public void setValueInt(int valueInt) {
+        this.valueInt = valueInt;
     }
 
-    public Integer getMyInteger() {
-        return myInteger;
+    public Integer getValueInteger() {
+        return valueInteger;
     }
 
-    public void setMyInteger(Integer myInteger) {
-        this.myInteger = myInteger;
+    public void setValueInteger(Integer valueInteger) {
+        this.valueInteger = valueInteger;
     }
 
-     static class MyInteger {
-        private int value;
+    public int getValueMyInteger() {
+        return valueMyInteger;
+    }
 
-        public MyInteger(int value) {
-            this.value = value;
-        }
-
-        public int getValue() {
-            return value;
-        }
-
-        public void setValue(int value) {
-            this.value = value;
-        }
+    public void setValueMyInteger(int valueMyInteger) {
+        this.valueMyInteger = valueMyInteger;
     }
 
     public static void main(String[] args) {
-        IntWithInteger myObj = new IntWithInteger(10, 20);
-        myObj.multiply42(myObj.getMyInt());
-        myObj.replaceInt(myObj.getMyInteger());
-        MyInteger myIntObj = new MyInteger(42);
-        myObj.divide42(myIntObj);
-
-        System.out.println("myInt: " + myObj.getMyInt());
-        System.out.println("myInteger: " + myObj.getMyInteger());
+        IntWithInteger nums = new IntWithInteger(10, 20, 42);
+        System.out.println("기존 int 값: " + nums.getValueInt());
+        System.out.println("기존 Integer 값: " + nums.getValueInteger());
+        System.out.println("기존 MyInteger 값: " + nums.getValueMyInteger());
+        System.out.println("메소드 실행 후, int 값: " + nums.multiply42(nums.getValueInt()));
+        System.out.println("메소드 실행 후, Integer 값: " + nums.replace42(nums.getValueInteger()));
+        System.out.println("메소드 실행 후, MyInteger 값: " + nums.divide42(nums.getValueMyInteger()));
     }
 }

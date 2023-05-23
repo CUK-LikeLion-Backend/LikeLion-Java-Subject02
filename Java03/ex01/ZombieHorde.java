@@ -3,31 +3,41 @@ package ex01;
 import java.util.ArrayList;
 
 public class ZombieHorde {
-    private ArrayList<Zombie> zombiehorde;
+    Zombie zombie = new Zombie();
+    Zombie newZombie = new Zombie();
+    private ArrayList<Zombie> zombieHorde;
 
-    public ZombieHorde() {
-        zombiehorde = new ArrayList<>();
-    }
-
-    // 좀비가 좀비 군단에 속하게 됨
-    public void addZombie(Zombie zombie) {
-        this.zombiehorde.add(zombie);
-    }
-
-    // 좀비 군단이 공격하면 좀비로 변함
-    public void attack() {
-        for (Zombie zombie : zombiehorde) {
-            zombie.turnIntoZombie();
+    public ZombieHorde(int number) {
+        zombieHorde = new ArrayList<>(number);
+        for (int i = 0; i < number; i++) {
+            zombieHorde.add(zombie);
         }
     }
 
-    // 좀비로 감염
-    public void infect(Zombie zombie) {
-        this.zombiehorde.add(zombie);
-        zombie.setIsZombie(true);
+    public void addZombie() {
+        zombieHorde.add(newZombie);
     }
 
-    public ArrayList<Zombie> getHorde() {
-        return zombiehorde;
+    public void attack () {
+        int originalSize = zombieHorde.size();
+        for (int i = 0; i < originalSize; i++) {
+            zombieHorde.get(i).bite();
+            addZombie();
+            newZombie.beZombie();
+        }
+    }
+
+    public void numberOfZombie() {
+        System.out.println("총 좀비 수: " + zombieHorde.size() + "명");
+    }
+
+    public static void main(String[] args) {
+        Zombie zombie = new Zombie();
+        ZombieHorde zombieHorde = new ZombieHorde(5);
+        zombieHorde.numberOfZombie();
+        zombieHorde.attack();
+        zombieHorde.numberOfZombie();
+        zombieHorde.attack();
+        zombieHorde.numberOfZombie();
     }
 }

@@ -1,22 +1,11 @@
 package ex04;
 
 public abstract class Animal {
-    private String name;
-    private Brain brain;
+    protected Brain brain;
 
-    public Animal(String name) {
-        this.name = name;
-        this.brain = new Brain(name);
+    public Animal(Brain brain) {
+        this.brain = brain;
     }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public void makeSound() {
     }
     public static void main(String[] args) {
@@ -27,3 +16,4 @@ public abstract class Animal {
         choco.makeSound();
     }
 }
+
