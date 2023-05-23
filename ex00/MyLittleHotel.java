@@ -12,7 +12,7 @@ public class MyLittleHotel {
         this.guestNum = 0;
         this.rooms = new Room[numOfRooms];
         for (int i = 0; i < numOfRooms; i++) {
-            this.rooms[i] = new Room(i + 1, true);
+            this.rooms[i] = new Room(i + 1, true); // 각 방을 초기화
         }
     }
 
@@ -27,7 +27,7 @@ public class MyLittleHotel {
 
     public boolean checkIn() {
         if (guestNum < 8) {
-            for (int i = 0; i < rooms.length; i++) {
+            for (int i = 0; i < rooms.length; i++) { // 각 방을 순회하며 사용가능한지 확인
                 if (rooms[i].isUsable()) {
                     rooms[i].setUsable(false);
                     guestNum++;

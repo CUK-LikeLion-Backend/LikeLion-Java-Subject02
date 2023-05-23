@@ -2,10 +2,18 @@ package ex03;
 
 import java.util.Scanner;
 
-public class ChatGPT extends GPT implements GameGPT, CodingGPT{
+public class ChatGPT implements GameGPT, CodingGPT, GPT{
 
+    private String name;
+
+    // 생성자
     public ChatGPT(String name) {
-        super(name);
+        this.name = name;
+    }
+
+    // 이름 반환
+    public String getName() {
+        return this.name;
     }
 
     public void rockScissorsPaper(String input) {
@@ -31,14 +39,15 @@ public class ChatGPT extends GPT implements GameGPT, CodingGPT{
         return sb.toString();
     }
 
-    public String hello() {
-        return super.hello();
+
+    public String hello(String name) {
+        return "안녕, 내 이름은 " + name + "이야";
     }
 
     public static void main(String[] args) {
         ChatGPT G = new ChatGPT("jinsoo");
         G.rockScissorsPaper("가위");
-        System.out.println(G.hello());
+        System.out.println(G.hello(G.getName()));
         System.out.println(G.algorithm("LikeLion"));
     }
 }

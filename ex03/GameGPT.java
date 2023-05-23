@@ -2,7 +2,6 @@ package ex03;
 
 public interface GameGPT {
     void rockScissorsPaper(String input);
-
 }
 
 // 인터페이스를 통한 다중상속이 가능한 이유
